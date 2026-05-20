@@ -12,6 +12,14 @@ import { OrientTechnologiesPage } from '@pages/US-003-orient-site-coverage/techn
 import { OrientBlogPage } from '@pages/US-003-orient-site-coverage/blog.page';
 import { OrientCareersPage } from '@pages/US-003-orient-site-coverage/careers.page';
 import { OrientContactPage } from '@pages/US-003-orient-site-coverage/contact.page';
+import { OrangeHrmLoginPage } from '@pages/OrangeHRM/login.page';
+import { OrangeHrmDashboardPage } from '@pages/OrangeHRM/dashboard.page';
+import { OrangeHrmAdminUsersPage } from '@pages/OrangeHRM/admin-users.page';
+import { OrangeHrmAddUserPage } from '@pages/OrangeHRM/add-user.page';
+import { OrangeHrmJobTitlesPage } from '@pages/OrangeHRM/admin-job-titles.page';
+import { OrangeHrmOrgGeneralPage } from '@pages/OrangeHRM/admin-org-general.page';
+import { OrangeHrmNationalitiesPage } from '@pages/OrangeHRM/admin-nationalities.page';
+import { OrangeHrmEditUserPage } from '@pages/OrangeHRM/edit-user.page';
 
 type Fixtures = {
   // US-001
@@ -30,6 +38,15 @@ type Fixtures = {
   blogPage: OrientBlogPage;
   careersPage: OrientCareersPage;
   contactPage: OrientContactPage;
+  // OrangeHRM
+  orangeHrmLoginPage: OrangeHrmLoginPage;
+  orangeHrmDashboardPage: OrangeHrmDashboardPage;
+  orangeHrmAdminUsersPage: OrangeHrmAdminUsersPage;
+  orangeHrmAddUserPage: OrangeHrmAddUserPage;
+  orangeHrmJobTitlesPage: OrangeHrmJobTitlesPage;
+  orangeHrmOrgGeneralPage: OrangeHrmOrgGeneralPage;
+  orangeHrmNationalitiesPage: OrangeHrmNationalitiesPage;
+  orangeHrmEditUserPage: OrangeHrmEditUserPage;
 };
 
 export const test = base.extend<Fixtures>({
@@ -46,6 +63,15 @@ export const test = base.extend<Fixtures>({
   blogPage: async ({ page }, use) => { await use(new OrientBlogPage(page)); },
   careersPage: async ({ page }, use) => { await use(new OrientCareersPage(page)); },
   contactPage: async ({ page }, use) => { await use(new OrientContactPage(page)); },
+  // OrangeHRM
+  orangeHrmLoginPage: async ({ page }, use) => { await use(new OrangeHrmLoginPage(page)); },
+  orangeHrmDashboardPage: async ({ page }, use) => { await use(new OrangeHrmDashboardPage(page)); },
+  orangeHrmAdminUsersPage: async ({ page }, use) => { await use(new OrangeHrmAdminUsersPage(page)); },
+  orangeHrmAddUserPage: async ({ page }, use) => { await use(new OrangeHrmAddUserPage(page)); },
+  orangeHrmJobTitlesPage: async ({ page }, use) => { await use(new OrangeHrmJobTitlesPage(page)); },
+  orangeHrmOrgGeneralPage: async ({ page }, use) => { await use(new OrangeHrmOrgGeneralPage(page)); },
+  orangeHrmNationalitiesPage: async ({ page }, use) => { await use(new OrangeHrmNationalitiesPage(page)); },
+  orangeHrmEditUserPage: async ({ page }, use) => { await use(new OrangeHrmEditUserPage(page)); },
 });
 
 export { expect } from '@playwright/test';

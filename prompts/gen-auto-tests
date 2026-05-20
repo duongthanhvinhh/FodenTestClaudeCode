@@ -1,0 +1,13 @@
+Role: Act as an expert automation engineer.
+
+Task: Write Playwright tests in TypeScript for the following OrangeHRM test cases.
+
+Constraints:
+
+* Follow the Page Object Model (POM) pattern to ensure readability and maintainability.
+
+* Under the pages directory, create a subfolder named OrangeHRM.
+
+* Under the tests directory, create a subfolder named OrangeHRM.
+
+Output: Should be well-structured, with clear test implementations organized under this repo.

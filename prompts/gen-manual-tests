@@ -1,0 +1,8 @@
+Step1: Ask AI to explore the web if don't have any requirement.
+Use playwright mcp, open orange hrm demo site, explore that hrm website
+
+
+Role: As an expert tester
+Tasks: I want you to write the test cases for Login page, and Admin page.
+Constraints: Cover happy path, edge cases, and negative cases.
+Output should be an excel file located in the root path of PLAYWRIGHT-DEMO repo
